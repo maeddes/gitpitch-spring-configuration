@@ -1,9 +1,6 @@
 
 # Configuration 
 
-
-
-
 ### twelve-factor app preview
 
 # III. Config
@@ -140,8 +137,7 @@ management.endpoints.web.exposure.include=*
 Enable specific endpoints  
 
 ```properties
-management.endpoints.web.exposure.include=configprops
-management.endpoints.web.exposure.include=mappings
+management.endpoints.web.exposure.include=configprops,mappings,env
 ```
 
 +++
@@ -161,8 +157,49 @@ Point the browser to: http://localhost:8080/actuator/env
 
 +++
 
+- different configuration profiles
 
++++
 
+- use filename
+
+appliction-postgres.properties
+```properties
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url= jdbc:postgresql://localhost:5432/mydb 
+spring.datasource.username=matthias
+spring.datasource.password=password
+```
++++
+
+- use filename
+
+appliction-h2.properties
+```properties
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+spring.datasource.url=jdbc:h2:mem:testdb 
+spring.datasource.username=sa
+spring.datasource.password=
+```
+
+- in same file (only in yaml)
+
+```yaml
+spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: test
+application:
+  name: test-app
+---
+spring:
+  profiles: dev
+application:
+  name: dev-app
+```
 
 
 
