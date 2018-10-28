@@ -157,7 +157,7 @@ Point the browser to: http://localhost:8080/actuator/env
 
 +++
 
-# different configuration profiles
+### different configuration profiles
 
 appliction.properties
 ```properties
@@ -167,7 +167,7 @@ spring.profiles.active=postgres
 
 +++
 
-- use filename
+### use filename
 
 appliction-postgres.properties
 ```properties
@@ -178,7 +178,7 @@ spring.datasource.password=password
 ```
 +++
 
-- use filename
+### use filename
 
 appliction-h2.properties
 ```properties
@@ -191,7 +191,7 @@ spring.datasource.password=
 
 +++
 
-- in same file (only in yaml)
+### in same file (only in yaml)
 
 ```yaml
 spring:
