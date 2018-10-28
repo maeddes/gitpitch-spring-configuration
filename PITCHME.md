@@ -189,12 +189,12 @@ spring.datasource.password=
 spring:
   profiles:
     active: test
----
+`---
 spring:
   profiles: test
 application:
   name: test-app
----
+`---
 spring:
   profiles: dev
 application:
