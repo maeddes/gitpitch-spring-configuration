@@ -1,0 +1,19 @@
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal pre code {
+	max-height: 600px;
+	font-size: 0.7em;
+}
+
+.reveal li {
+	font-size: 0.7em;
+	margin:0 0 10px 0;  
+}
+
+.reveal p {
+	font-size: 0.7em;
+	margin:0 0 10px 0;  
+}
