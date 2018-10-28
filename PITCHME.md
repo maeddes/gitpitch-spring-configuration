@@ -157,7 +157,13 @@ Point the browser to: http://localhost:8080/actuator/env
 
 +++
 
-- different configuration profiles
+# different configuration profiles
+
+appliction.properties
+```properties
+management.endpoints.web.exposure.include=configprops,mappings,env
+spring.profiles.active=postgres
+```
 
 +++
 
