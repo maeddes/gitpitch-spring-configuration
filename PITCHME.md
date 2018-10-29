@@ -159,7 +159,7 @@ Point the browser to: http://localhost:8080/actuator/env
 
 ### different configuration profiles
 
-appliction.properties
+application.properties
 ```properties
 management.endpoints.web.exposure.include=configprops,mappings,env
 spring.profiles.active=postgres
@@ -169,7 +169,7 @@ spring.profiles.active=postgres
 
 ### use filename
 
-appliction-postgres.properties
+application-postgres.properties
 ```properties
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url= jdbc:postgresql://localhost:5432/mydb 
@@ -180,7 +180,7 @@ spring.datasource.password=password
 
 ### use filename
 
-appliction-h2.properties
+application-h2.properties
 ```properties
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2
